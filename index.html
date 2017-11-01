@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia Viewer</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:300,500,600" rel="stylesheet">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="css/wikipedia-viewer.css">
+</head>
+
+<body>
+  <header>
+    <div id="header-title">
+      Wikipedia Viewer
+    </div>
+    <p>
+      Use the search or try out a <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">random</a> article.
+    </p>
+    <input type="text" placeholder="Search Wikipedia" id="input-search">
+    <button class="btn" id="btn-search">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+  </header>
+  
+  <main id="articles">
+    <p id="txt-no-result">
+      No results matched your query.
+    </p>
+  </main>
+  
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src="js/wikipedia-viewer.js"></script>
+</body>
+</html>

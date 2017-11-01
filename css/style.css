@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  color: #333;
+  background-color: #f9f9f9;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  margin: 30px 0 18px;
+  color: #424242;
+}
+
+a {
+  color: #0d82ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #66c8f9;
+}
+
+header {
+  text-align: center;
+  padding: 0 20px;
+  min-width: 320px;
+}
+
+#header-title {
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-size: 39px;
+  font-weight: bold;
+  margin: 60px 0 0 0;
+}
+
+#input-search {
+  border: solid 1px #ccc;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  padding: 4px 7px 5px 7px;
+  margin: 0 0 24px 0;
+  width: 277px;
+  outline: none;
+}
+
+.btn {
+  background-color: #dddddd;
+  border: none;
+  font-size: 19px;
+  height: 31px;
+  width: 31px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #c7c7c7;
+}
+
+#articles {
+  padding: 0 20px;
+  margin: 0 0 80px 0;
+  min-width: 320px;
+}
+
+.article {
+  background-color: #fff;
+  border: solid 1px #ccc;
+  padding: 20px;
+  margin: 16px auto;
+  max-width: 1000px;
+  position: relative; /*necessary for 'article-link' class*/
+  right: 30px; /*offset for jquery animation*/
+  cursor: pointer;
+}
+
+.article:hover {
+  background-color: #ececec;
+  /*
+  border-left-style: solid;
+  border-left-width: 6px;
+  border-left-color: #6ACAFF;
+  */
+}
+
+.article-title {
+  color: #270A2B;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+
+.article-txt {
+  font-size: 15px;
+}
+
+.article-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#txt-no-result {
+  display: none;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
+
+@media screen and (max-width: 390px) {
+  header {
+    padding: 0 10px;
+  }
+  #header-title {
+    font-size: 32px;
+  }
+  #input-search {
+    width: 220px;
+  }
+}
